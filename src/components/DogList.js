@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 
 
 export default class DogsList extends Component {
-    state = { dogBreeds: null }
+    //state = { dogBreeds: null }
+    
     renderDogBreed(breed) {
         return <li key={breed}>{breed}</li>
       }
