@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import DogList from './components/DogList';
+
+import DogListContainer from './components/DogListContainer';
 
 export default class App extends React.Component {
   render() {
@@ -9,7 +10,7 @@ export default class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <DogList/>
+          <DogListContainer/>
         </header>
       </div>
     );
