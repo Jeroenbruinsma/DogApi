@@ -6,7 +6,6 @@ export default class DogBreedImagesContainer extends Component {
     state = { images: null }
 
     componentDidMount() {
-        console.log("YEah!", this.props)
         const breed = this.props.match.params.breed
         request
             .get(`https://dog.ceo/api/breed/${encodeURIComponent(breed)}/images`)
@@ -20,10 +19,6 @@ export default class DogBreedImagesContainer extends Component {
         })
     }
     render() {
-        
         return <DogBreedImages images={this.state.images} breed={this.props.match.params.breed} />
-       
-
-
     }
 }

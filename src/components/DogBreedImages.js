@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 
 export default function DogBreedImages(props) {
-    console.log("Img prop", props)
     const {images} = props
     return (
         <div className="dog-breed-images">
